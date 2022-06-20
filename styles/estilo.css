@@ -35,6 +35,9 @@ header label:hover{
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    animation-name: navanimada;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 .nav_logo{
     width: 50px;
@@ -92,7 +95,14 @@ h1{
 h2{
     font-size: 30px;
     font-weight: bold;
+    text-align: center;
+
    
+}
+h3{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
 }
 .main {
     grid-area: main;
@@ -117,6 +127,14 @@ h2{
     height: 200px;
     display: none;
     align-items: center;
+    object-fit: scale-down;
+}
+.preparacion{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     object-fit: scale-down;
 }
 .imagen {
@@ -196,7 +214,11 @@ h2{
     color: #8bfd09;
 }
 
-
+@keyframes navanimada {
+    0% {background-color: #05121d;}
+    100% {background-color: #000;}
+    
+}
 
 @media screen and (max-width:768px) {
     
