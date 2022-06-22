@@ -4,50 +4,72 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=>, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./../styles/estilo.css">
-    <link rel="shortcut icon" href="../img/logomate.jpg" />
+    <link rel="stylesheet" href="../styles/estilo.css">
+    <link rel="shortcut icon" href="./img/logomate.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2835b28860.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Mates Patagonicos</title>
   </head>
-  <body class="cuerpo">
-    <header class="header">
-      <input type="checkbox" id="btn_menu">
-       <label for="btn_menu"><img src="../img/navmenu.png" class="menu_img"></label>
-       <nav class="nav">
-         <img src="../img/logomate.jpg" alt="Mates Patagonicos Logo" class="nav_logo">
-         <ul class="nav_ul">
-           <li class="nav_li"><a href="./../index.html"><i class="fas fa-home"></i>Home</a></li>
-           <li class="nav_li"><a href="./quienessomos.html"><i class="fas fa-users"></i>¿Quienes somos?</a></li>
-           <li class="nav_li"><a href="./precios.html"><i class="fas fa-coins"></i>Tabla de precios</a></li>
-           <li class="nav_li"><a href="./productos.html"><i class="fas fa-shopping-cart"></i>Productos</a></li>
-           <li class="nav_li"><a href="./contacto.html"><i class="fas fa-id-card-alt"></i> Contacto</a></li>
-         </ul>
-       </nav>
-     </header>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-blue">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../img/logomate.jpg" alt="Mates Patagonicos" class="NavLogo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/productos.html">Productos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
    <hr>
    <section class="main">
     <h1>Productos disponibles</h1>
-   <br/>
-   <div class="fotos_productos">
-     <h2 >Mates</h2>
-     <img src="../img/camionero.jpg" alt="matespatagonicos" title="mate camionero" class="productos">
-     <img src="../img/imperial.jpg" alt="matespatagonicos" title="mate imperial" class="productos" >
-     <img src="../img/torpedo.jpg" alt="matespatagonicos" title="mate torpedo" class="productos" >
-   </div>
-   <div class="fotos_productos">
-     <h2>Clickea aquí para agrandar la imagen</h2>
-     <a href="../img/torpedo.jpg" target="_blank"><img src="../img/torpedo.jpg" alt="matespatagonicos" title="mate torpedo"></a>
-   </div>
-   <div class="fotos_productos">
-     <h2>Bombillas</h2>
-      <img src="../img/picodeloro.jpg" alt="matespatagonicos" title="Pico de Loro" class="productos">
-      <img src="../img/bombilla1.jpg" alt="matespatagonicos" title="Bombilla" class="productos" >
-      <img src="../img/bombilla-de-plata.jpg" alt="matespatagonicos" title="Bombilla de plata" class="productos" >
-   </div>
-  </section>
+    <div class="row">
+     <div class="card" style="width: 18rem;">
+       <img src="../img/imperial.jpg" class="card-img-top" alt="Mates Patagonicos">
+       <div class="card-body">
+         <p class="card-text">Mate imperial con virola de alpaca.</p>
+       </div>
+     </div>
+     <div class="card" style="width: 18rem;">
+       <img src="../img/camionero.jpg" class="card-img-top" alt="Mates Patagonicos">
+       <div class="card-body">
+         <p class="card-text">Mate camionero con virola de alpaca.</p>
+       </div>
+     </div>
+     <div class="card" style="width: 18rem;">
+       <img src="../img/torpedo.jpg" class="card-img-top" alt="Mates Patagonicos">
+       <div class="card-body">
+         <p class="card-text">Mate torpedo con virola de alpaca.</p>
+       </div>
+     </div>
+  </div>
+  <div class="row">
+    <div class="card" style="width: 18rem;">
+      <img src="../img/bombilla1.jpg" class="card-img-top" alt="Mates Patagonicos">
+      <div class="card-body">
+        <p class="card-text">Bombilla de alpaca</p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="../img/bombilla-de-plata.jpg" class="card-img-top" alt="Mates Patagonicos">
+      <div class="card-body">
+        <p class="card-text">Bombilla pico de plata.</p>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+ </div>
   <footer class="footer">
     <ul class="footer_list">
       <li class="footer__li"><a href ="https://www.instagram.com/agustinscialpi/" target="_blank"> INSTRAGAM</a></li>
